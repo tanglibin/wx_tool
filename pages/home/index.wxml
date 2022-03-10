@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view class="container">
+	<!-- Banner -->
+    <view class="banner" >
+        <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+			<block wx:for="{{banner}}" wx:for-index="idx1" wx:key="idx1">
+				<swiper-item>
+				<image src="{{item.url}}" class="slide-image" />
+				</swiper-item>
+			</block>
+		</swiper>
+    </view>
+	<!-- 推荐软件 -->
+	<view class="title">最近更新</view>
+	<view class="list_main renew">
+		<navigator url="/pages/details/details"hover-class="navigator-hover" class="list_renew" wx:for="{{list}}" wx:for-index="idx" wx:key="idx" >
+			<image class="list_img" src="{{item.img}}"></image>
+			<view class="list_right">
+				<view class="list_title1">{{item.name}}</view>
+				<view class="list_title2">{{item.sort}}</view>
+			</view>
+		</navigator>
+	</view>
+	<!-- 推荐软件 -->
+	<view class="list_main">
+		<view class="list_title">推荐软件</view>
+		<view class="list" wx:for="{{list}}" wx:for-index="idx" wx:key="idx" >
+			<image class="list_img" src="{{item.img}}"></image>
+			<view class="list_right">
+				<view class="list_title1">{{item.name}}</view>
+				<view class="list_title2">{{item.sort}}</view>
+			</view>
+			<view class="list_Details">详情</view>
+		</view>
+	</view>
+	
+</view>

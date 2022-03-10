@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container">
+	<!-- 搜索 -->
+	<view class="search_main">
+		<view class="search">
+			<image class="search_icon" src="../../static/images/search1.png" />
+			<input class="weui-input" auto-focus placeholder="请输入要搜索的软件"/>
+		</view>
+		<view class="search_txt">搜索</view>
+	</view>
+	<!-- 推荐软件 -->
+	<view class="list_main">
+		<view class="list_title">推荐软件</view>
+		<view class="list" wx:for="{{list}}" wx:for-index="idx" wx:key="idx" >
+			<image class="list_img" src="{{item.img}}"></image>
+			<view class="list_right">
+				<view class="list_title1">{{item.name}}</view>
+				<view class="list_title2">{{item.sort}}</view>
+			</view>
+			<view class="list_Details">详情</view>
+		</view>
+	</view>
+	
+</view>

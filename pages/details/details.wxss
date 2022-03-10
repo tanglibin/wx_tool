@@ -1,0 +1,11 @@
+/**index.wxss**/
+.container{ padding-bottom:140rpx;}
+.image{width: 100%;}
+.content_txt{padding:30rpx;}
+.content_title{line-height: 120rpx; font-size:36rpx;}
+text{ font-size:28rpx; color: #666; word-wrap:break-word;}
+.copy{ position:fixed; bottom:0; padding:30rpx; background-color: #fff; width: calc(100% - 60rpx);border-top: 1px solid #eee;}
+.btnCopy{ background-color: #39cd9d; color:#fff; }
+.btnCopy:not([size=mini]){
+  width: 100%;
+}

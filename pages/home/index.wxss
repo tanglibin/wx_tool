@@ -1,0 +1,29 @@
+/**index.wxss**/
+.container{background:#fff;align-items:left; }
+/* 列表 */
+.list_main{padding:32rpx;}
+.list_title{ font-size:48rpx; color:#333; line-height:88rpx;}
+.list_title2{ font-size:24rpx; color:#999;}
+.list{display: flex;  flex-flow: row;margin-bottom:30rpx; align-items: center;}
+.list_img{ width:112rpx;  height:112rpx}
+.list_right{ padding-left:30rpx;flex: 2;}
+.list_title1{ font-size:30rpx; color:#333; margin-bottom:10rpx; margin-top:10rpx; height:44rpx; overflow: hidden;}
+.list_title_txt text{ font-size:24rpx; color:#89b5f4;padding:0 20rpx; background-color:#ecf4ff; margin-right: 10rpx; }
+.slide-image{ width: 100%; }
+.list_time{ font-size:20rpx;}
+.list_Details{ font-size:24rpx; background-color:#f8f8f8; color:#666; padding:10rpx 30rpx; color:#666; border-radius: 6rpx;}
+/*  */
+.renew{ grid-template-columns: repeat(2,1fr);display: grid; grid-gap: 16px; padding-top: 0; }
+.list_renew{padding:20rpx; background-color:#f8f8f8; border-radius: 6rpx; text-align: center;}
+.title{ font-size:48rpx; color:#333; line-height:128rpx; padding-left: 30rpx; }
+.renew .list_right{ padding-left:0}
+page::after{
+    content: '';
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2rpx;
+    background-color: #efefef;
+    z-index: 9999;
+  }
